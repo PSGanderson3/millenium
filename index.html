@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Milenium - Training System | Boutique Fitness Club</title>
+  <meta name="description" content="Gym Milenium: Tu gimnasio boutique de entrenamiento 360. Sesiones optimizadas de 50 minutos, musculación, entrenamiento funcional y nutrición deportiva. Adquiere tu plan online.">
+  <meta name="keywords" content="gym milenium, gimnasio, planes de gimnasio, entrenamiento 50 minutos, fitness, pesas, funcional, miraflores, lima">
+  
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gym Milenium - Training System &amp; Fitness Club">
+  <meta property="og:description" content="Tu tiempo es valioso. Sesiones de 50 minutos optimizadas para llevarte al máximo. Adquiere tu plan favorito online.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:url" content="https://gymmilenium.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       BARRA SUPERIOR DE ANUNCIOS Y REDES
+       ========================================================================= -->
+  <div class="announcement-bar">
+    <div class="container">
+      <div class="announcement-promo">
+        <span class="badge-promo">PROMO EXCLUSIVA</span>
+        <span>🔥 <strong>MATRÍCULA 100% GRATIS</strong> ESTE MES • CUPOS LIMITADOS</span>
+      </div>
+      <div class="announcement-right">
+        <div class="contact-quick">
+          <i class="fa-solid fa-phone"></i>
+          <span>Atención al Socio: +51 904 118 326</span>
+        </div>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=51904118326" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HEADER / NAVBAR STICKY
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Logo Gym Milenium -->
+      <a href="#" class="brand-logo" aria-label="Gym Milenium Inicio">
+        <img src="assets/logo.svg" alt="Gym Milenium Logo" width="220" height="48">
+      </a>
+
+      <!-- Menú Principal Desktop -->
+      <nav class="main-menu" aria-label="Navegación principal">
+        <a href="#inicio" class="menu-link active">INICIO</a>
+        <a href="#concepto" class="menu-link">METODOLOGÍA</a>
+        <a href="#experiencia360" class="menu-link">EXPERIENCIA 360</a>
+        <a href="#planes" class="menu-link">PLANES</a>
+        <a href="#sedes" class="menu-link">SEDES</a>
+        <a href="#calculadora" class="menu-link">CALCULA TU IMC</a>
+        <a href="#faq" class="menu-link">PREGUNTAS</a>
+      </nav>
+
+      <!-- Botones de Acción Header -->
+      <div class="header-actions">
+        <a href="#planes" class="btn btn-primary btn-sm">
+          <span>ADQUIRIR PLAN</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" aria-label="Abrir menú de navegación">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú Móvil Lateral (Drawer) -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-nav-drawer" aria-label="Menú móvil">
+    <div>
+      <div class="mobile-drawer-header">
+        <img src="assets/logo.svg" alt="Gym Milenium" width="160" height="35">
+        <button class="mobile-close" aria-label="Cerrar menú"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="mobile-menu-items">
+        <a href="#inicio" class="menu-link">INICIO</a>
+        <a href="#concepto" class="menu-link">METODOLOGÍA</a>
+        <a href="#experiencia360" class="menu-link">EXPERIENCIA 360</a>
+        <a href="#planes" class="menu-link">PLANES</a>
+        <a href="#sedes" class="menu-link">SEDES</a>
+        <a href="#calculadora" class="menu-link">CALCULADORA IMC</a>
+        <a href="#faq" class="menu-link">PREGUNTAS FRECUENTES</a>
+      </div>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="#planes" class="btn btn-primary btn-block" style="margin-bottom: 12px;">
+        <i class="fa-solid fa-bolt"></i> VER PLANES
+      </a>
+      <a href="#" class="btn btn-whatsapp btn-block trigger-free-pass">
+        <i class="fa-brands fa-whatsapp"></i> CLASE DE PRUEBA
+      </a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       HERO SECTION DE ALTO IMPACTO
+       ========================================================================= -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" 
+         alt="Entrenamiento en Gym Milenium" 
+         class="hero-bg-image" 
+         loading="eager">
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-bolt"></i>
+        <span>TRAINING SYSTEM &bull; RESULTADOS REALES</span>
+      </div>
+
+      <h1 class="hero-title">
+        LLEVA TU CUERPO AL <br>
+        <span class="highlight">MÁXIMO PODER</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Somos el gimnasio boutique donde cada sesión de <strong>50 minutos</strong> está científicamente optimizada para desafiar tus límites con equipamiento de primer nivel, nutrición deportiva y coaches certificados.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#planes" class="btn btn-primary">
+          <i class="fa-solid fa-fire"></i>
+          <span>VER NUESTROS PLANES</span>
+        </a>
+        <a href="#" class="btn btn-outline trigger-free-pass">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>CLASE DE PRUEBA GRATIS</span>
+        </a>
+      </div>
+
+      <!-- Estadísticas Rápidas -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">50 Min</span>
+          <span class="stat-label">Sesión Optimizada</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Sedes Modernas</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">+1,800</span>
+          <span class="stat-label">Socios Activos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Coaches Pro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECCIÓN: TU TIEMPO ES VALIOSO (CONCEPTO / METODOLOGÍA)
+       ========================================================================= -->
+  <section id="concepto" class="section-concept">
+    <div class="container">
+      <div class="section-header">
+        <div class="concept-icon-wrap">
+          <i class="fa-regular fa-clock"></i>
+        </div>
+        <span class="section-tag">
+          <i class="fa-solid fa-award"></i> FILOSOFÍA MILENIUM
+        </span>
+        <h2 class="section-title">TU TIEMPO ES <span class="highlight">VALIOSO</span></h2>
+        <p class="section-desc">
+          Somos un <strong>gimnasio boutique exclusivo</strong> donde cada sesión dura solo <strong>50 minutos</strong> y está meticulosamente planificada para llevarte al máximo de forma eficiente, sin pérdidas de tiempo ni congestión.
+        </p>
+      </div>
+
+      <div class="concept-grid">
+        <div class="concept-card">
+          <div class="card-icon"><i class="fa-solid fa-stopwatch-20"></i></div>
+          <h3>50 MINUTOS EFICIENTES</h3>
+          <p>Rutinas estructuradas bajo intervalos de alta intensidad (HIIT y sobrecarga progresiva). Entrena, suda, rinde y continúa con tu día con la energía al 100%.</p>
+        </div>
+
+        <div class="concept-card">
+          <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <h3>METODOLOGÍA PROBADA</h3>
+          <p>Combinamos levantamiento de fuerza, circuitos metabólicos y acondicionamiento cardiovascular para quemar grasa y construir músculo de forma armónica.</p>
+        </div>
+
+        <div class="concept-card">
+          <div class="card-icon"><i class="fa-solid fa-apple-whole"></i></div>
+          <h3>NUTRICIÓN INTELIGENTE</h3>
+          <p>Evaluaciones antropométricas periódicas y planes de alimentación diseñados por nutricionistas deportivos para potenciar tu déficit o volumen muscular.</p>
+        </div>
+
+        <div class="concept-card">
+          <div class="card-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>AFORO EXCLUSIVO</h3>
+          <p>Entrena con comodidad. Controlamos la cantidad de personas por turno para que disfrutes de cada máquina y mancuerna sin colas ni esperas molestas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECCIÓN: EXPERIENCIA DE ENTRENAMIENTO 360
+       ========================================================================= -->
+  <section id="experiencia360" class="section-360">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">
+          <i class="fa-solid fa-circle-nodes"></i> ECOSSISTEMA COMPLETO
+        </span>
+        <h2 class="section-title">
+          UNA EXPERIENCIA DE ENTRENAMIENTO <br>
+          <span class="highlight">360 EN UN SOLO LUGAR</span>
+        </h2>
+        <p class="section-desc">
+          Integramos tecnología, equipamiento de última generación, coaching de élite y bienestar integral para garantizar tu evolución diaria.
+        </p>
+      </div>
+
+      <div class="cards-360-grid">
+        <!-- Tarjeta 1: App Fitness -->
+        <div class="card-360">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=700&auto=format&fit=crop" alt="App Fitness Gym Milenium" loading="lazy">
+          <div class="card-360-overlay"></div>
+          <div class="card-360-caption">
+            <h3 class="card-360-title">APP FITNESS &amp; SEGUIMIENTO</h3>
+            <p class="card-360-desc">Controla tus cargas, marcas históricas, asistencia y rutinas personalizadas desde tu smartphone.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Frecuente Motivación -->
+        <div class="card-360">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=700&auto=format&fit=crop" alt="Frecuente Motivación" loading="lazy">
+          <div class="card-360-overlay"></div>
+          <div class="card-360-caption">
+            <h3 class="card-360-title">FRECUENTE MOTIVACIÓN</h3>
+            <p class="card-360-desc">Coaches en sala siempre dispuestos a corregir tu técnica y empujarte a dar esa última repetición ganadora.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Equipamiento de Primera -->
+        <div class="card-360">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=700&auto=format&fit=crop" alt="Equipamiento de Primera" loading="lazy">
+          <div class="card-360-overlay"></div>
+          <div class="card-360-caption">
+            <h3 class="card-360-title">EQUIPAMIENTO DE PRIMERA</h3>
+            <p class="card-360-desc">Máquinas biomecánicas con movimiento fluido, barras olímpicas, racks de potencia y mancuernas de uretano.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Asesoría Nutricional -->
+        <div class="card-360">
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=700&auto=format&fit=crop" alt="Asesoría Nutricional" loading="lazy">
+          <div class="card-360-overlay"></div>
+          <div class="card-360-caption">
+            <h3 class="card-360-title">ASESORÍA NUTRICIONAL</h3>
+            <p class="card-360-desc">Guía dietética enfocada en macronutrientes reales, adaptada a tus preferencias alimentarias y ritmo de vida.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5: Entrenamiento Exclusivo -->
+        <div class="card-360">
+          <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=700&auto=format&fit=crop" alt="Entrenamiento Exclusivo" loading="lazy">
+          <div class="card-360-overlay"></div>
+          <div class="card-360-caption">
+            <h3 class="card-360-title">ENTRENAMIENTO EXCLUSIVO</h3>
+            <p class="card-360-desc">Ambiente motivante, música estimulante y vestuarios de lujo con casilleros y duchas privadas de agua caliente.</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6: Comunidad & Recovery -->
+        <div class="card-360">
+          <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=700&auto=format&fit=crop" alt="Comunidad Fitness" loading="lazy">
+          <div class="card-360-overlay"></div>
+          <div class="card-360-caption">
+            <h3 class="card-360-title">COMUNIDAD Y RECUPERACIÓN</h3>
+            <p class="card-360-desc">Zona de estiramiento y descarga, cafetería saludable y venta de suplementación deportiva de marcas certificadas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECCIÓN PRINCIPAL: PLANES (#planes - IGUAL A AARMYGYM/#PLANES)
+       ========================================================================= -->
+  <section id="planes" class="section-planes">
+    <div class="container">
+      <div class="section-header">
+        <p class="planes-tagline"><i class="fa-solid fa-crown"></i> MEMBRESÍAS OFICIALES GYM MILENIUM</p>
+        <h2 class="section-title">
+          ADQUIERE TU PLAN FAVORITO <br>
+          <span class="highlight">ONLINE AQUÍ</span>
+        </h2>
+        <p class="section-desc">
+          Elige la membresía que mejor se adapta a tu objetivo. Todos nuestros planes incluyen acceso total a sala de pesas, cardio, clases y asesoría inicial. Sin costos ocultos.
+        </p>
+      </div>
+
+      <!-- Filtro / Badge de Moneda -->
+      <div class="planes-filter-bar">
+        <div class="currency-badge">
+          <i class="fa-solid fa-wallet"></i>
+          <span>Precios transparentes en <strong>Soles Peruanos (S/)</strong></span>
+        </div>
+        <div class="currency-badge">
+          <i class="fa-solid fa-tag"></i>
+          <span>Matrícula: <strong>GRATIS (S/ 0)</strong></span>
+        </div>
+      </div>
+
+      <!-- Grid de 4 Planes (1 MES, 3 MESES, 6 MESES, 12 MESES) -->
+      <div class="planes-grid">
+        
+        <!-- PLAN 1: 1 MES -->
+        <div class="card-plan">
+          <div class="plan-header">
+            <h3 class="plan-duration">1 MES</h3>
+            <p class="plan-subtitle">Paso inicial para retomar el ritmo</p>
+          </div>
+
+          <div class="plan-price-content">
+            <span class="price-label">PRECIO</span>
+            <div class="price-main"><span class="currency">S/</span>250</div>
+            <p class="price-note">Pago único &bull; Sin permanencia</p>
+          </div>
+
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Acceso ilimitado en cualquier horario</li>
+            <li><i class="fa-solid fa-check"></i> Evaluación antropométrica inicial</li>
+            <li><i class="fa-solid fa-check"></i> Acceso total a pesas y cardio</li>
+            <li><i class="fa-solid fa-check"></i> Casilleros y duchas privadas</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Asesoría nutricional continua</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Congelamiento de membresía</li>
+          </ul>
+
+          <div class="plan-actions">
+            <button class="btn-lo-quiero" data-plan="1 MES" data-price="S/ 250">
+              LO QUIERO
+            </button>
+          </div>
+        </div>
+
+        <!-- PLAN 2: 3 MESES (MÁS POPULAR) -->
+        <div class="card-plan featured">
+          <span class="plan-badge-top">⭐ MÁS ELEGIDO</span>
+          
+          <div class="plan-header">
+            <h3 class="plan-duration">3 MESES</h3>
+            <p class="plan-subtitle">Constancia y cambios físicos notorios</p>
+          </div>
+
+          <div class="plan-price-content">
+            <span class="price-label">PRECIO</span>
+            <div class="price-main"><span class="currency">S/</span>650</div>
+            <p class="price-note">Equivale a solo S/ 216 / mes</p>
+          </div>
+
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Acceso ilimitado en cualquier horario</li>
+            <li><i class="fa-solid fa-check"></i> Plan nutricional personalizado de 1 mes</li>
+            <li><i class="fa-solid fa-check"></i> Rutina interactiva en la App Fitness</li>
+            <li><i class="fa-solid fa-check"></i> Clases funcionales y HIIT incluidas</li>
+            <li><i class="fa-solid fa-check"></i> Congelamiento por hasta 7 días</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> Pases de cortesía para amigos</li>
+          </ul>
+
+          <div class="plan-actions">
+            <button class="btn-lo-quiero" data-plan="3 MESES" data-price="S/ 650">
+              LO QUIERO
+            </button>
+          </div>
+        </div>
+
+        <!-- PLAN 3: 6 MESES (MEJOR VALOR) -->
+        <div class="card-plan">
+          <span class="plan-badge-top" style="background: #ffffff; color: #000;">🔥 MEJOR VALOR</span>
+
+          <div class="plan-header">
+            <h3 class="plan-duration">6 MESES</h3>
+            <p class="plan-subtitle">Transformación muscular y definición</p>
+          </div>
+
+          <div class="plan-price-content">
+            <span class="price-label">PRECIO</span>
+            <div class="price-main"><span class="currency">S/</span>1,150</div>
+            <p class="price-note">Equivale a solo S/ 191 / mes</p>
+          </div>
+
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Acceso ilimitado multisede</li>
+            <li><i class="fa-solid fa-check"></i> 2 Evaluaciones nutricionales con bioimpedancia</li>
+            <li><i class="fa-solid fa-check"></i> Rutina adaptativa por objetivos en App</li>
+            <li><i class="fa-solid fa-check"></i> 2 Pases libres para invitar a amigos</li>
+            <li><i class="fa-solid fa-check"></i> Congelamiento por hasta 15 días</li>
+            <li><i class="fa-solid fa-check"></i> Kit de bienvenida Gym Milenium</li>
+          </ul>
+
+          <div class="plan-actions">
+            <button class="btn-lo-quiero" data-plan="6 MESES" data-price="S/ 1,150">
+              LO QUIERO
+            </button>
+          </div>
+        </div>
+
+        <!-- PLAN 4: 12 MESES (VIP ANUAL) -->
+        <div class="card-plan">
+          <span class="plan-badge-top">👑 VIP MILENIUM</span>
+
+          <div class="plan-header">
+            <h3 class="plan-duration">12 MESES</h3>
+            <p class="plan-subtitle">El mayor ahorro y disciplina anual</p>
+          </div>
+
+          <div class="plan-price-content">
+            <span class="price-label">PRECIO</span>
+            <div class="price-main"><span class="currency">S/</span>1,990</div>
+            <p class="price-note">Equivale a solo S/ 165 / mes</p>
+          </div>
+
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Acceso ilimitado 365 días a TODAS las sedes</li>
+            <li><i class="fa-solid fa-check"></i> Asesoría nutricional trimestral completa</li>
+            <li><i class="fa-solid fa-check"></i> 5 Pases libres para amigos o familiares</li>
+            <li><i class="fa-solid fa-check"></i> Congelamiento de membresía hasta 30 días</li>
+            <li><i class="fa-solid fa-check"></i> Polo exclusivo oficial Gym Milenium</li>
+            <li><i class="fa-solid fa-check"></i> Descuento del 15% en cafetería y tienda</li>
+          </ul>
+
+          <div class="plan-actions">
+            <button class="btn-lo-quiero" data-plan="12 MESES VIP" data-price="S/ 1,990">
+              LO QUIERO
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra de Confianza & Beneficios -->
+      <div class="planes-trust">
+        <div class="trust-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Compra 100% segura por WhatsApp o Sede</span>
+        </div>
+        <div class="trust-item">
+          <i class="fa-solid fa-snowflake"></i>
+          <span>Congelamiento de membresía incluido</span>
+        </div>
+        <div class="trust-item">
+          <i class="fa-solid fa-credit-card"></i>
+          <span>Aceptamos Yape, Plin, Tarjetas y Efectivo</span>
+        </div>
+        <div class="trust-item">
+          <i class="fa-solid fa-dumbbell"></i>
+          <span>Sin cuotas de mantenimiento sorpresa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECCIÓN: SIGUE NAVEGANDO • NUESTRAS SEDES
+       ========================================================================= -->
+  <section id="sedes" class="section-sedes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-location-dot"></i> RED DE CLUBES</span>
+        <h2 class="section-title">SIGUE NAVEGANDO &bull; <span class="highlight">SEDES</span></h2>
+        <p class="section-desc">
+          Entrena cerca de tu casa o trabajo con instalaciones de alto nivel en las zonas más céntricas.
+        </p>
+      </div>
+
+      <div class="sedes-grid">
+        <!-- Sede 1: Miraflores -->
+        <div class="card-sede">
+          <div class="sede-image-box">
+            <span class="sede-tag">SEDE PRINCIPAL</span>
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=700&auto=format&fit=crop" alt="Sede Miraflores Gym Milenium" loading="lazy">
+          </div>
+          <div class="sede-info">
+            <h3 class="sede-titulo">MIRAFLORES</h3>
+            <p class="sede-direccion">
+              <i class="fa-solid fa-map-pin"></i> Av. José Pardo 601
+            </p>
+            <p class="sede-horario">
+              <i class="fa-regular fa-clock"></i> Lun - Vie: 6:00am - 10:30pm | Sáb - Dom: 7:00am - 4:00pm
+            </p>
+            <div class="sede-actions">
+              <button class="btn-inscribirme" data-sede="miraflores" data-nombre="Miraflores">
+                <i class="fa-brands fa-whatsapp"></i> INSCRIBIRME AHORA
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sede 2: San Borja -->
+        <div class="card-sede">
+          <div class="sede-image-box">
+            <span class="sede-tag">ZONA RESIDENCIAL</span>
+            <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=700&auto=format&fit=crop" alt="Sede San Borja Gym Milenium" loading="lazy">
+          </div>
+          <div class="sede-info">
+            <h3 class="sede-titulo">SAN BORJA</h3>
+            <p class="sede-direccion">
+              <i class="fa-solid fa-map-pin"></i> Av. Aviación 2536
+            </p>
+            <p class="sede-horario">
+              <i class="fa-regular fa-clock"></i> Lun - Vie: 6:00am - 10:30pm | Sáb - Dom: 7:00am - 3:00pm
+            </p>
+            <div class="sede-actions">
+              <button class="btn-inscribirme" data-sede="sanBorja" data-nombre="San Borja">
+                <i class="fa-brands fa-whatsapp"></i> INSCRIBIRME AHORA
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sede 3: Surco -->
+        <div class="card-sede">
+          <div class="sede-image-box">
+            <span class="sede-tag">ZONA FINANCIERA</span>
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=700&auto=format&fit=crop" alt="Sede Surco Gym Milenium" loading="lazy">
+          </div>
+          <div class="sede-info">
+            <h3 class="sede-titulo">SURCO</h3>
+            <p class="sede-direccion">
+              <i class="fa-solid fa-map-pin"></i> Av. Primavera 886 (5to piso)
+            </p>
+            <p class="sede-horario">
+              <i class="fa-regular fa-clock"></i> Lun - Vie: 6:00am - 10:30pm | Sáb - Dom: 7:00am - 3:00pm
+            </p>
+            <div class="sede-actions">
+              <button class="btn-inscribirme" data-sede="surco" data-nombre="Surco">
+                <i class="fa-brands fa-whatsapp"></i> INSCRIBIRME AHORA
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sede 4: Lince -->
+        <div class="card-sede">
+          <div class="sede-image-box">
+            <span class="sede-tag">CENTRO URBANO</span>
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=700&auto=format&fit=crop" alt="Sede Lince Gym Milenium" loading="lazy">
+          </div>
+          <div class="sede-info">
+            <h3 class="sede-titulo">LINCE</h3>
+            <p class="sede-direccion">
+              <i class="fa-solid fa-map-pin"></i> Jr. Coronel Domingo Casanova 157
+            </p>
+            <p class="sede-horario">
+              <i class="fa-regular fa-clock"></i> Lun - Vie: 6:00am - 10:30pm | Sáb - Dom: 7:00am - 3:00pm
+            </p>
+            <div class="sede-actions">
+              <button class="btn-inscribirme" data-sede="lince" data-nombre="Lince">
+                <i class="fa-brands fa-whatsapp"></i> INSCRIBIRME AHORA
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CALCULADORA DE IMC INTERACTIVA (HERRAMIENTA FITNESS)
+       ========================================================================= -->
+  <section id="calculadora" class="section-calculator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-calculator"></i> EVALUACIÓN VIRTUAL</span>
+        <h2 class="section-title">CALCULA TU <span class="highlight">IMC Y PLAN IDEAL</span></h2>
+        <p class="section-desc">
+          Introduce tus medidas actuales para conocer tu Índice de Masa Corporal y la recomendación de entrenamiento personalizada para ti.
+        </p>
+      </div>
+
+      <div class="calculator-wrapper">
+        <div class="calc-form-side">
+          <div class="calc-form-group">
+            <label for="calcPeso">Tu Peso Actual (kg)</label>
+            <input type="number" id="calcPeso" class="calc-input" placeholder="Ej: 72" min="30" max="250">
+          </div>
+
+          <div class="calc-form-group">
+            <label for="calcAltura">Tu Estatura (cm)</label>
+            <input type="number" id="calcAltura" class="calc-input" placeholder="Ej: 175" min="100" max="230">
+          </div>
+
+          <button id="btnCalcularIMC" class="btn btn-primary btn-block">
+            <i class="fa-solid fa-calculator"></i> CALCULAR AHORA
+          </button>
+        </div>
+
+        <div class="calc-result-box" id="calcResult" style="display: none;">
+          <p style="font-size: 0.85rem; color: #a1a1aa; text-transform: uppercase; letter-spacing: 1.5px;">Tu Índice de Masa Corporal</p>
+          <div class="calc-score" id="calcScore">--</div>
+          <div class="calc-status" id="calcStatus">Diagnóstico</div>
+          <p class="calc-recommendation" id="calcDesc">Recomendación</p>
+          <button id="calcActionBtn" class="btn btn-whatsapp btn-sm">
+            <i class="fa-brands fa-whatsapp"></i> ASESORÍA PERSONALIZADA
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECCIÓN: PREGUNTAS FRECUENTES (FAQ)
+       ========================================================================= -->
+  <section id="faq" class="section-faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-circle-question"></i> RESPUESTAS CLARAS</span>
+        <h2 class="section-title">PREGUNTAS <span class="highlight">FRECUENTES</span></h2>
+        <p class="section-desc">
+          Todo lo que necesitas saber antes de comenzar a entrenar en Gym Milenium.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>¿Cómo funciona la sesión de 50 minutos?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Nuestros programas están diseñados con base científica para maximizar el gasto calórico y la estimulación muscular en 50 minutos. Evitas tiempos muertos y logras mejores resultados que pasando horas innecesarias en el gimnasio.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Tengo que pagar matrícula o cuota de inscripción?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            ¡No! En Gym Milenium la matrícula es 100% gratuita. Solo abonas el valor de tu plan seleccionado sin cuotas ocultas ni costos sorpresa.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo congelar mi membresía si viajo o me enfermo?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Sí. Los planes de 3, 6 y 12 meses incluyen días de congelamiento (freeze) gratuitos para que no pierdas tu inversión si sales de viaje o tienes algún imprevisto.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Puedo entrenar en cualquiera de las 4 sedes?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Los planes de 6 y 12 meses cuentan con acceso multisede ilimitado (Miraflores, San Borja, Surco y Lince). En planes mensuales puedes consultar la opción multisede con tu asesor de WhatsApp.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué debo llevar para mi primer día?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Ropa deportiva cómoda, zapatillas de entrenamiento, toalla de mano para las máquinas y un tomatodo para hidratarte. Nosotros te proporcionamos casillero seguro y duchas con agua caliente.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+       ========================================================================= -->
+  <div class="floating-whatsapp">
+    <div class="whatsapp-bubble">
+      <span>¿Dudas con los planes? <strong>¡Escríbenos!</strong></span>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=51904118326&text=Hola%20Gym%20Milenium,%20quisiera%20información%20sobre%20los%20planes" 
+       target="_blank" 
+       rel="noopener" 
+       class="whatsapp-btn-icon" 
+       aria-label="Contactar por WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- =========================================================================
+       MODAL: CLASE DE PRUEBA GRATUITA / CAPTURA DE LEADS
+       ========================================================================= -->
+  <div id="leadModal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Cerrar ventana emergente"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="modal-title">CLASE DE <span style="color: var(--color-accent);">PRUEBA GRATIS</span></h3>
+      <p class="modal-subtitle">Ven a conocer Gym Milenium y experimenta nuestros 50 minutos de alta intensidad sin costo alguno.</p>
+
+      <form id="modalLeadForm">
+        <div class="calc-form-group">
+          <label for="leadName">Nombre Completo</label>
+          <input type="text" id="leadName" class="calc-input" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="calc-form-group">
+          <label for="leadPhone">Teléfono o WhatsApp</label>
+          <input type="tel" id="leadPhone" class="calc-input" placeholder="Ej: 999 888 777" required>
+        </div>
+
+        <div class="calc-form-group">
+          <label for="leadSede">Sede de tu preferencia</label>
+          <select id="leadSede" class="calc-input">
+            <option value="Miraflores">Miraflores (Av. José Pardo)</option>
+            <option value="San Borja">San Borja (Av. Aviación)</option>
+            <option value="Surco">Surco (Av. Primavera)</option>
+            <option value="Lince">Lince (Jr. Domingo Casanova)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top: 24px;">
+          <i class="fa-brands fa-whatsapp"></i> AGENDAR POR WHATSAPP
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER PROFESIONAL
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Columna 1: Brand -->
+        <div class="footer-about">
+          <img src="assets/logo.svg" alt="Gym Milenium" width="220" height="48">
+          <p>
+            Gym Milenium es el centro de acondicionamiento físico boutique líder en entrenamiento integral 360 y optimización del tiempo.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=51904118326" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4>EXPLORAR</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#concepto">Metodología 50 Min</a></li>
+            <li><a href="#experiencia360">Experiencia 360</a></li>
+            <li><a href="#planes">Planes y Precios</a></li>
+            <li><a href="#sedes">Nuestras Sedes</a></li>
+            <li><a href="#calculadora">Calculadora de IMC</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Legal & Políticas -->
+        <div class="footer-col">
+          <h4>POLÍTICAS</h4>
+          <ul class="footer-links">
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Reglamento Interno</a></li>
+            <li><a href="#">Política de Congelamiento</a></li>
+            <li><a href="#">Libro de Reclamaciones</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Newsletter -->
+        <div class="footer-col footer-newsletter">
+          <h4>RECIBE BENEFICIOS</h4>
+          <p>Suscríbete para recibir rutinas gratuitas, guías nutricionales y promociones exclusivas.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+            <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gym Milenium. Todos los derechos reservados. Diseñado para rendimiento y resultados.</p>
+        <p>Optimizado para alojamiento en Hostinger (Fast Static Delivery).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
