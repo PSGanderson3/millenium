@@ -8,30 +8,30 @@
 // CONFIGURACIÓN RÁPIDA (FÁCIL DE CAMBIAR PARA TU CLIENTE)
 const GYM_CONFIG = {
   gymName: "Gym Milenium",
-  // Cambia aquí el número principal de WhatsApp (código de país + número, sin espacios ni símbolos)
-  whatsappDefault: "51904118326",
+  // Cambia aquí el número principal de WhatsApp (código de país + número, sin espacios ni símbolos) WASAP GE
+  whatsappDefault: "51906821944",
   currencySymbol: "S/",
   
   // Teléfonos directos por sede (si tienen números separados)
   sedes: {
     miraflores: {
       nombre: "Sede Miraflores",
-      telefono: "51904118326",
+      telefono: "51906821944",
       direccion: "Av. José Pardo 601"
     },
     sanBorja: {
       nombre: "Sede San Borja",
-      telefono: "51946581675",
+      telefono: "51904169584",
       direccion: "Av. Aviación 2536"
     },
     surco: {
       nombre: "Sede Surco",
-      telefono: "51974229642",
+      telefono: "51906821944",
       direccion: "Av. Primavera 886 (5to piso)"
     },
     lince: {
       nombre: "Sede Lince",
-      telefono: "51971587227",
+      telefono: "51906821945",
       direccion: "Jr. Coronel Domingo Casanova 157"
     }
   }
@@ -102,7 +102,7 @@ function initMobileDrawer() {
 }
 
 /**
- * 3. Enlaces inteligentes a WhatsApp para Planes y Sedes
+ * 3. Enlaces inteligentes a WhatsApp para Planes y Sedes 
  */
 function initWhatsappLinks() {
   // Configuración de botones de planes ("LO QUIERO")
@@ -290,18 +290,26 @@ function initFormSubmissions() {
       e.preventDefault();
       const nombre = document.getElementById('leadName').value.trim();
       const telefono = document.getElementById('leadPhone').value.trim();
-      const sede = document.getElementById('leadSede').value;
+      const sedeKey = document.getElementById('leadSede').value;
 
       if (!nombre || !telefono) {
         alert('Por favor completa tu nombre y teléfono.');
         return;
       }
 
+      // Obtener la información y el teléfono directo de la sede elegida
+      const sedeInfo = GYM_CONFIG.sedes[sedeKey] || {
+        nombre: sedeKey,
+        telefono: GYM_CONFIG.whatsappDefault
+      };
+
+      const telefonoDestino = sedeInfo.telefono || GYM_CONFIG.whatsappDefault;
+
       const mensaje = encodeURIComponent(
-        `¡Hola Gym Milenium! 👋 Mi nombre es *${nombre}* (${telefono}). Me registré en la web para solicitar mi *CLASE DE PRUEBA GRATIS* en la sede *${sede}*. ¿Cómo coordinamos el horario?`
+        `¡Hola Gym Milenium! 👋 Mi nombre es *${nombre}* (${telefono}). Me registré en la web para solicitar mi *CLASE DE PRUEBA GRATIS* en la *${sedeInfo.nombre}*. ¿Cómo coordinamos el horario?`
       );
 
-      const url = `https://api.whatsapp.com/send?phone=${GYM_CONFIG.whatsappDefault}&text=${mensaje}`;
+      const url = `https://api.whatsapp.com/send?phone=${telefonoDestino}&text=${mensaje}`;
       window.open(url, '_blank');
 
       // Cerrar modal
