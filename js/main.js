@@ -191,6 +191,8 @@ function initCalculatorIMC() {
 
     scoreEl.innerText = imc;
     resultBox.style.display = 'block';
+    const calcWrapper = document.querySelector('.calculator-wrapper');
+    if (calcWrapper) calcWrapper.classList.add('has-result');
 
     let estado = '';
     let recomendacion = '';
